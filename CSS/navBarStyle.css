@@ -1,0 +1,135 @@
+/* <!-- NAV BAR STARTS --> */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(201, 199, 199);
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+nav li {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li:nth-child(8){
+    margin-left: auto;
+}
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    color: black;
+}
+
+
+nav img {
+    width: 50px;
+    margin: 0 30px 0 0;
+}
+
+nav #bookAconsultationBG {
+    background-color: rgb(99 102 241 / var(--tw-bg-opacity, 1));
+    border-radius: 2em;
+    font-size: .9em;
+    padding: .6em 1.5em;
+    color: rgb(255, 255, 255);
+    margin-right: 2em;
+    transition: .4s;
+}
+
+nav #bookAconsultationBG:hover {
+        color: rgb(0, 0, 0);
+        background-color:  rgb(99 102 241 / var(--tw-bg-opacity, .7));
+    }
+
+
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.274);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+.sidebar li {
+    
+    width: 100%;
+    margin-bottom: 1.5em;
+
+}
+.sidebar a {
+    width: 100%;
+    color: rgb(0, 0, 0);
+    font-size: 1.2em;
+
+}
+
+.manu_button {
+    display: none;
+}
+
+
+
+
+/* ---------- @media ----------- */
+
+ @media (max-width: 1250px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .manu_button {
+        display: block;
+    }
+    .sidebar {
+    width: 70%;
+    }
+    
+    
+ }
+
+@media (max-width: 1370px) {
+
+
+
+}
+
+@media (max-width: 990px) {
+    .sidebar {
+    width: 60%;
+    }
+    .hide_under990 {
+        display: none;
+    }
+}
